@@ -1,0 +1,42 @@
+appId: nl.themarkers.superior
+productName: The Superior Markers
+linux:
+  icon: app/window/icon.png
+  executableName: thesuperiormarkers
+  category: Network;
+  maintainer: ILoveAndLikePizza
+  publish:
+  target:
+    - target: AppImage
+      arch:
+        - x64
+        - arm64
+    - target: deb
+      arch:
+        - x64
+        - arm64
+    - target: rpm
+      arch:
+        - x64
+        - arm64
+mac:
+  category: public.app-category.productivity
+  icon: app/window/icon.png
+  publish:
+  target:
+    - target: zip
+      arch:
+        - x64
+        - arm64
+win:
+  icon: app/window/icon.png
+  legalTrademarks: Copyright @ ILoveAndLikePizza. All rights reserved.
+  publish:
+  target:
+    - target: nsis
+      arch:
+        - x64
+    - target: portable
+      arch:
+        - x64
+copyright: Copyright @ ILoveAndLikePizza. All rights reserved.

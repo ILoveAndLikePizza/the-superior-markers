@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #222;
+    display: flex;
+    flex-direction: column;
+    font-family: system-ui;
+}
+
+#themarkers {
+    width: 100vw;
+    height: 100vh;
+    transition: 0.3s ease;
+}
+#themarkers webview {
+    width: 100%;
+    height: 100%;
+}
+
+#integrated-lef {
+    width: 100vw;
+    height: 0vh;
+    transition: 0.3s ease;
+    display: flex;
+    gap: 12px;
+}
+#integrated-lef div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#integrated-lef div button {
+    background-color: #444;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    padding: 6px;
+    border-radius: 6px;
+    font-family: inherit;
+    transition: 0.2s ease;
+}
+#integrated-lef .professional-tasks {
+    display: none;
+}
+#integrated-lef #main-categories button {
+    padding: 32px 8px;
+    margin-left: 4px;
+}
+#integrated-lef .levels button {
+    padding: 5px 16px;
+    font-size: 24px;
+}
+#integrated-lef div button.active {
+    background-color: #666;
+}
+#integrated-lef div button:hover {
+    background-color: #888;
+    cursor: pointer;
+}
+#integrated-lef #contents {
+    width: calc(100vw - 660px);
+    justify-content: flex-start;
+}
+#integrated-lef #contents #item-name {
+    color: white;
+    margin: 8px 0;
+    font-size: 28px;
+}
+#integrated-lef #contents #item-description {
+    color: white;
+    margin: 0;
+    overflow-y: auto;
+}
+#integrated-lef #contents #item-description h3 {
+    background-color: rgba(255, 128, 0, 0.35);
+    width: calc(100% - 16px);
+    padding: 8px;
+    font-size: 16px;
+    font-weight: normal;
+    border-radius: 8px;
+}
+#integrated-lef #item-description strong {
+    color: orangered;
+}
+#integrated-lef #item-name em {
+    color: #aaa;
+    margin-left: 8px;
+}
+
+#lef-button {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    width: 48px;
+    height: 48px;
+    background-color: #333;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    transition: 0.2s ease;
+}
+#lef-button.active {
+    background-color: #555;
+}
+#lef-button:hover {
+    background-color: #777;
+    cursor: pointer;
+}
+#lef-button img {
+    width: 95%;
+    height: 95%;
+    pointer-events: none;
+}

@@ -1,0 +1,30 @@
+{
+  "name": "thesuperiormarkers",
+  "version": "1.0.0",
+  "description": "The Markers, maar dan superieur!",
+  "main": "app/index.js",
+  "scripts": {
+    "start": "electron app",
+    "build": "electron-builder"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ILoveAndLikePizza/TheSuperiorMarkers.git"
+  },
+  "keywords": [
+    "themarkers",
+    "markers",
+    "markeerstiften",
+    "superior"
+  ],
+  "author": "ILoveAndLikePizza",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ILoveAndLikePizza/TheSuperiorMarkers/issues"
+  },
+  "homepage": "https://github.com/ILoveAndLikePizza/TheSuperiorMarkers#readme",
+  "devDependencies": {
+    "electron": "^30.0.1",
+    "electron-builder": "^24.13.3"
+  }
+}
